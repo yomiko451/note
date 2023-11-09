@@ -34,6 +34,7 @@ body {
 }
 .button:hover {
     transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .button:active {
     background-color: skyblue;
@@ -55,13 +56,14 @@ textarea {
     font-size: 20px;
     line-height: 26px;
     font-weight: bold;
-    border: none;
+    border: 2px solid transparent;
     resize: none;
     transition: all 0.3s;
     background-color: rgb(202, 234, 206);
 }
 textarea:focus {
-    outline: 3px solid skyblue;
+    border: 2px solid skyblue;
+    outline: none;
     height: 176px;
 }
 input {
